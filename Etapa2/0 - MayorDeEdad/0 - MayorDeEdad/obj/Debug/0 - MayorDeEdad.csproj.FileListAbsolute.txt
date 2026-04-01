@@ -1,0 +1,6 @@
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\0 - MayorDeEdad\0 - MayorDeEdad\bin\Debug\0 - MayorDeEdad.exe.config
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\0 - MayorDeEdad\0 - MayorDeEdad\bin\Debug\0 - MayorDeEdad.exe
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\0 - MayorDeEdad\0 - MayorDeEdad\bin\Debug\0 - MayorDeEdad.pdb
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\0 - MayorDeEdad\0 - MayorDeEdad\obj\Debug\0 - MayorDeEdad.csprojResolveAssemblyReference.cache
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\0 - MayorDeEdad\0 - MayorDeEdad\obj\Debug\0 - MayorDeEdad.exe
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\0 - MayorDeEdad\0 - MayorDeEdad\obj\Debug\0 - MayorDeEdad.pdb
