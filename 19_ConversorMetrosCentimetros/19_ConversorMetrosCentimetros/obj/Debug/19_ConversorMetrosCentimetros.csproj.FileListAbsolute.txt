@@ -1,5 +1,0 @@
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\Etapa0\19_ConversorMetrosCentimetros\19_ConversorMetrosCentimetros\bin\Debug\19_ConversorMetrosCentimetros.exe.config
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\Etapa0\19_ConversorMetrosCentimetros\19_ConversorMetrosCentimetros\bin\Debug\19_ConversorMetrosCentimetros.exe
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\Etapa0\19_ConversorMetrosCentimetros\19_ConversorMetrosCentimetros\bin\Debug\19_ConversorMetrosCentimetros.pdb
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\Etapa0\19_ConversorMetrosCentimetros\19_ConversorMetrosCentimetros\obj\Debug\19_ConversorMetrosCentimetros.exe
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\Etapa0\19_ConversorMetrosCentimetros\19_ConversorMetrosCentimetros\obj\Debug\19_ConversorMetrosCentimetros.pdb
