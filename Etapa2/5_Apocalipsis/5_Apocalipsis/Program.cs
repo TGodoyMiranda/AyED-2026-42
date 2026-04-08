@@ -10,30 +10,90 @@ namespace _5_Apocalipsis
     {
         static void Main(string[] args)
         {
+            int Puntos = 0;
+            string Con1 = "";
             Console.Write("Tiene un bate? ");
-            string Batcon = Console.ReadLine();
-            Console.Write("Tiene un refugio ");
-            string Refcon = Console.ReadLine();
-            Console.Write("Tiene comida? ");
-            string Comcon = Console.ReadLine();
+            Con1 = Console.ReadLine();
+            if (Con1.ToLower() == "si")
+            {
+                Puntos += 1;
+                Con1 = "";
+            }
+            else if (Con1.ToLower() == "no")
+            {
+                Puntos -= 1;
+                Con1 = "";
+            }
+            Console.Write("Tiene un refugio? ");
+            Con1 = Console.ReadLine();
+            if (Con1.ToLower() == "si")
+            {
+                Puntos += 1;
+                Con1 = "";
+            }
+            else if (Con1.ToLower() == "no")
+            {
+                Puntos -= 1;
+                Con1 = "";
+            }
             Console.Write("Tiene agua? ");
-            string Agucon = Console.ReadLine();
+            Con1 = Console.ReadLine();
+            if (Con1.ToLower() == "si")
+            {
+                Puntos += 1;
+                Con1 = "";
+            }
+            else if (Con1.ToLower() == "no")
+            {
+                Puntos -= 1;
+                Con1 = "";
+            }
+            Console.Write("Tiene comida? ");
+            Con1 = Console.ReadLine();
+            if (Con1.ToLower() == "si")
+            {
+                Puntos += 1;
+                Con1 = "";
+            }
+            else if (Con1.ToLower() == "no")
+            {
+                Puntos -= 1;
+                Con1 = "";
+            }
+            Console.Write("Tiene comida? ");
+            Con1 = Console.ReadLine();
+            if (Con1.ToLower() == "si")
+            {
+                Puntos += 1;
+                Con1 = "";
+            }
+            else if (Con1.ToLower() == "no")
+            {
+                Puntos -= 1;
+                Con1 = "";
+            }
             Console.Write("Tiene botiquin? ");
-            string Botcon = Console.ReadLine();
-            if (Batcon.ToLower() == "si" && Refcon.ToLower() == "si" && Comcon.ToLower() == "si" && Agucon.ToLower() == "si" && Botcon.ToLower() == "si")
+            Con1 = Console.ReadLine();
+            if (Con1.ToLower() == "si")
             {
-                Console.WriteLine("Usted sobrevivira");
+                Puntos += 1;
+                Con1 = "";
             }
-            else if (Batcon.ToLower() == "si" && Refcon.ToLower() == "no" && Comcon.ToLower() == "si" && Agucon.ToLower() == "si" && Botcon.ToLower() == "no")
+            else if (Con1.ToLower() == "no")
             {
-                Console.WriteLine("Usted sobrevivira");
-            }
-            else if (Batcon.ToLower() == "no" && Refcon.ToLower() == "no" && Comcon.ToLower() == "no" && Agucon.ToLower() == "no" && Botcon.ToLower() == "no")
-            {
-                Console.WriteLine("Usted no sobrevivira");
+                Puntos -= 1;
+                Con1 = "";
             }
 
-
+            if (Puntos >= 3)
+            {
+                Console.WriteLine("Sobrevivis el apocalipsis.");
+            }
+            else
+            {
+                Console.WriteLine("No sobrevivis el apocalipsis.");
+            }
+            Console.ReadKey();
         }
     }
 }

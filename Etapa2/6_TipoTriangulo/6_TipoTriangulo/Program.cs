@@ -16,23 +16,26 @@ namespace _6_TipoTriangulo
             int b = int.Parse(Console.ReadLine());
             Console.Write("Ingrese un angulo 'c': ");
             int c = int.Parse(Console.ReadLine());
-            if (a + b > c || c + b > a || c + b > a) {
-                Console.WriteLine("Es un triangulo valido");
-                if (a == b && a != c || c == b && c != a || b == c && a != a)
+            if (a + b > c) {
+                if (a == b && a != c || c == b && c != a || c == a  && c != b)
                 {
-                    Console.WriteLine("Es un triangulo Isosceles");
+                    Console.WriteLine("Es un triangulo valido tipo Isosceles");
 
                 }
-                else if (a == b && a == c || c == b && c == a || b == c && a == a)
+                else if (a == b && a == c || c == b && c == a || b == c && b == a)
                 {
-                    Console.WriteLine("Es un triangulo Equilitatero");
-
+                    Console.WriteLine("Es un triangulo valido tipo Equilitatero");
+                }
+                else
+                {
+                    Console.WriteLine("Es un triangulo valido tipo Escaleno");
                 }
             }
             else
             {
                 Console.WriteLine("No es un triangulo valido");
             }
+            Console.ReadKey();
         }
     }
 }
