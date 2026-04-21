@@ -17,7 +17,6 @@ namespace _12_FizzBuzz
                 else if (num % 5 == 0) Console.WriteLine("Buzz");
                 else if (num % 3 == 0) Console.WriteLine("Fizz");
                 else Console.WriteLine(num);
-
                 num += 1;
             }
             Console.ReadKey();
