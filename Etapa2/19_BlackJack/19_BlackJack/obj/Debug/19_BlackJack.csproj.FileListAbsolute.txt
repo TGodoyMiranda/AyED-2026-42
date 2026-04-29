@@ -1,0 +1,6 @@
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\19_BlackJack\19_BlackJack\bin\Debug\19_BlackJack.exe.config
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\19_BlackJack\19_BlackJack\obj\Debug\19_BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\19_BlackJack\19_BlackJack\bin\Debug\19_BlackJack.exe
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\19_BlackJack\19_BlackJack\bin\Debug\19_BlackJack.pdb
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\19_BlackJack\19_BlackJack\obj\Debug\19_BlackJack.exe
+C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa2\19_BlackJack\19_BlackJack\obj\Debug\19_BlackJack.pdb
