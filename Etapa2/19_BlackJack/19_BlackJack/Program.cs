@@ -23,10 +23,10 @@ namespace _19_BlackJack
                 Console.WriteLine();
                 Console.Write("Cartas del Crupier: "); CartasCuprier.ForEach(Console.Write);
                 Console.WriteLine();
-                Console.WriteLine("1. Pedir carta");
-                Console.WriteLine("2. Plantarse");
-                Console.WriteLine("3. Ver reglas");
-                Console.WriteLine("4. Salir");
+                Console.WriteLine("> 1. Pedir carta");
+                Console.WriteLine("> 2. Plantarse");
+                Console.WriteLine("> 3. Ver reglas");
+                Console.WriteLine("> 4. Salir");
                 Console.WriteLine();
                 Console.WriteLine("Escriba que hacer (El numero al lado de la accion)");
                 opcion = Console.ReadLine();
