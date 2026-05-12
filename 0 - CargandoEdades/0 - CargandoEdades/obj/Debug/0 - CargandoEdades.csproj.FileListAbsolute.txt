@@ -1,6 +1,0 @@
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa3\0 - CargandoEdades\0 - CargandoEdades\bin\Debug\0 - CargandoEdades.exe.config
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa3\0 - CargandoEdades\0 - CargandoEdades\bin\Debug\0 - CargandoEdades.exe
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa3\0 - CargandoEdades\0 - CargandoEdades\bin\Debug\0 - CargandoEdades.pdb
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa3\0 - CargandoEdades\0 - CargandoEdades\obj\Debug\0 - CargandoEdades.csprojResolveAssemblyReference.cache
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa3\0 - CargandoEdades\0 - CargandoEdades\obj\Debug\0 - CargandoEdades.exe
-C:\Users\Lab AyED\Documents\1_GodoyMiranda\AyED-2026-42\Etapa3\0 - CargandoEdades\0 - CargandoEdades\obj\Debug\0 - CargandoEdades.pdb
