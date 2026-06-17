@@ -5,7 +5,6 @@
 ### 4°2°
 
 Contenidos:
-* Etapa 0:
-* Etapa 1: Fundamentos de Programacion
-* Etapa 2
-* Etapa 3
+* Etapa 1: Fundamentos de Programacion.
+* Etapa 2: Estructuras de control.
+* Etapa 3: Arrays y Colecciones.
