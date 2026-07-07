@@ -97,7 +97,7 @@ namespace _13___PERO
                         break;
                     case 2:
                         // Punto 2: Ver todas las misiones
-                        for (int j = 0; j <= 30; j++)
+                        for (int j = 0; j < 30; j++)
                         {
                             if (Misiones[j, 0] == -1)
                             {
@@ -105,9 +105,17 @@ namespace _13___PERO
                             }
                             else
                             {
+                                int k = 0;
                                 for (int l = 0; l < 5; l++)
+
                                 {
+                                    if (k == 0) { Console.Write("ID: "); }
+                                    else if (k == 1) { Console.Write("Mapa: "); }
+                                    else if (k == 2) { Console.Write("Objeto a extraer: "); }
+                                    else if (k == 3) { Console.Write("Nivel de peligro: "); }
+                                    else if (k == 4) { Console.Write("Estado: "); }
                                     Console.Write(Misiones[j, l] + " | ");
+                                    k++;
                                 }
                                 Console.WriteLine("");
                             }
@@ -119,24 +127,55 @@ namespace _13___PERO
                         int IDBusqueda = int.Parse(Console.ReadLine());
                         for (int j = 0; j < 30; j++)
                         {
-                            if (IDBusqueda == Misiones[j, 1])
+                            if (IDBusqueda == Misiones[j, 0])
                             {
-                                if (Misiones[j, 5] == 2)
+                                if (Misiones[j, 4] == 2)
                                 {
-                                    Misiones[j, 5] = 0;
+                                    Misiones[j, 4] = 0;
                                 }
                                 else
                                 {
-                                    Misiones[j, 5] = Misiones[j, 5] + 1;
+                                    Misiones[j, 4] = Misiones[j, 4] + 1;
                                 }
                             }
                         }
                         break;
                     case 4:
                         // Punto 4: Listar misiones en curso
-                        break;
+                        Console.Write("Misiones en curso: ");
+                        for (int j = 0; j < 30; j++)
+                        {
+                            if (Misiones[j, 4] == 1)
+                            {
+                                int k = 0;
+                                for (int l = 0; l < 5; l++)
+
+                                {
+                                    if (k == 0) { Console.Write("ID: "); }
+                                    else if (k == 1) { Console.Write("Mapa: "); }
+                                    else if (k == 2) { Console.Write("Objeto a extraer: "); }
+                                    else if (k == 3) { Console.Write("Nivel de peligro: "); }
+                                    else if (k == 4) { Console.Write("Estado: "); }
+                                    Console.Write(Misiones[j, l] + " | ");
+                                    k++;
+                                }
+                                Console.WriteLine("");
+                            }
+                        }
+                            break;
                     case 5:
                         // Punto 5: Misión con más objetos a extraer
+                        int l = 0;
+                        int M_obj = Misiones[j, 2];
+                        Console.WriteLine("Misión con más objetos a extraer:");
+                        for (int j = 0; j < 30; j++)
+                        {
+                            if (M_obj < Misiones[j, 2])
+                            {
+                                M_obj = Misiones[j,2];
+                                l = j
+                            }
+                        }
                         break;
                     case 6:
                         // Punto 6: Promedio de peligro por mapa
