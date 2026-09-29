@@ -30,7 +30,7 @@ namespace _13___PERO
                 Console.WriteLine("3. Cambiar estado de una misión");
                 Console.WriteLine("4. Listar misiones en curso");
                 Console.WriteLine("5. Misión con más objetos a extraer");
-                Console.WriteLine("6. Promedio de pegrilo por mapa");
+                Console.WriteLine("6. Promedio de peligro por mapa");
                 Console.WriteLine("7. Filtrar por mapa");
                 Console.WriteLine("8. Salir");
                 Console.Write("Opción: ");
@@ -106,15 +106,15 @@ namespace _13___PERO
                             else
                             {
                                 int k = 0;
-                                for (int l = 0; l < 5; l++)
+                                for (int h = 0; h < 5; h++)
 
                                 {
                                     if (k == 0) { Console.Write("ID: "); }
                                     else if (k == 1) { Console.Write("Mapa: "); }
-                                    else if (k == 2) { Console.Write("Objeto a extraer: "); }
+                                    else if (k == 2) { Console.Write("Objetos a extraer: "); }
                                     else if (k == 3) { Console.Write("Nivel de peligro: "); }
                                     else if (k == 4) { Console.Write("Estado: "); }
-                                    Console.Write(Misiones[j, l] + " | ");
+                                    Console.Write(Misiones[j, h] + " | ");
                                     k++;
                                 }
                                 Console.WriteLine("");
@@ -129,9 +129,9 @@ namespace _13___PERO
                         {
                             if (IDBusqueda == Misiones[j, 0])
                             {
-                                if (Misiones[j, 4] == 2)
+                                if (Misiones[j, 4] == 3)
                                 {
-                                    Misiones[j, 4] = 0;
+                                    Misiones[j, 4] = 1;
                                 }
                                 else
                                 {
@@ -142,13 +142,13 @@ namespace _13___PERO
                         break;
                     case 4:
                         // Punto 4: Listar misiones en curso
-                        Console.Write("Misiones en curso: ");
+                        Console.WriteLine("Misiones en curso: ");
                         for (int j = 0; j < 30; j++)
                         {
                             if (Misiones[j, 4] == 1)
                             {
                                 int k = 0;
-                                for (int l = 0; l < 5; l++)
+                                for (int h = 0; h < 5; h++)
 
                                 {
                                     if (k == 0) { Console.Write("ID: "); }
@@ -156,7 +156,7 @@ namespace _13___PERO
                                     else if (k == 2) { Console.Write("Objeto a extraer: "); }
                                     else if (k == 3) { Console.Write("Nivel de peligro: "); }
                                     else if (k == 4) { Console.Write("Estado: "); }
-                                    Console.Write(Misiones[j, l] + " | ");
+                                    Console.Write(Misiones[j, h] + " | ");
                                     k++;
                                 }
                                 Console.WriteLine("");
@@ -164,24 +164,58 @@ namespace _13___PERO
                         }
                             break;
                     case 5:
-                        // Punto 5: Misión con más objetos a extraer
-                        int l = 0;
-                        int M_obj = Misiones[j, 2];
+                        int max_mision_index = 0;
+                        int max_objetos = Misiones[0, 2];
                         Console.WriteLine("Misión con más objetos a extraer:");
-                        for (int j = 0; j < 30; j++)
+                        for (int m = 1; m < 30; m++)
                         {
-                            if (M_obj < Misiones[j, 2])
+                            if (Misiones[m, 2] > max_objetos)
                             {
-                                M_obj = Misiones[j,2];
-                                l = j
+                                max_objetos = Misiones[m, 2];
+                                max_mision_index = m;
                             }
                         }
+                        Console.WriteLine("Mision " + max_mision_index + " con un total de " + max_objetos + " objetos.");
                         break;
+
                     case 6:
                         // Punto 6: Promedio de peligro por mapa
+                        int max_mapas = 30;
+                        int[] suma_peligro = new int[max_mapas];
+                        int[] cantidad_misiones = new int[max_mapas];
+
+                        for (int m = 0; m < 30; m++)
+                        {
+                            int mapa = Misiones[m, 1];
+                            int peligro = Misiones[m, 3];
+                            if (mapa >= 0 && mapa < max_mapas)
+                            {
+                                suma_peligro[mapa] += peligro;
+                                cantidad_misiones[mapa]++;
+                            }
+                        }
+                        Console.WriteLine("Promedio de peligro por mapa:");
+                        for (int k = 0; k < max_mapas; k++)
+                        {
+                            if (cantidad_misiones[k] > 0)
+                            { double promedio = (double)suma_peligro[k] / cantidad_misiones[k]; Console.WriteLine("- Mapa " + k + ": Promedio de peligro = " + promedio.ToString("F2")); }
+                        }
                         break;
+
+
                     case 7:
                         // Punto 7: Filtrar por mapa
+                        Console.Write("Ingrese el número de mapa para filtrar: ");
+                        int mapa_buscado = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("\nMisiones encontradas en el mapa " + mapa_buscado + ":");
+                        bool encontro_misiones = false;
+
+                        for (int m = 0; m < 30; m++)
+                        {
+                            if (Misiones[m, 1] == mapa_buscado) { Console.WriteLine("- Misión " + m + ": " + Misiones[m, 2] + " objetos a extraer."); encontro_misiones = true; }
+                        }
+                        if (!encontro_misiones) { Console.WriteLine("No se encontraron misiones registradas para el mapa " + mapa_buscado + "."); }
                         break;
                     case 8:
                         Console.WriteLine("Saliendo del sistema... ¡Esperemos que el PERO no sea letal!");
